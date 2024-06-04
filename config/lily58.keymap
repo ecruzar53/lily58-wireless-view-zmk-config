@@ -30,7 +30,13 @@
 
         Hide {
             bindings = <&kp LC(H)>;
-            key-positions = <26 28>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        ctrlR {
+            bindings = <&kp LC(R)>;
+            key-positions = <26 27>;
             layers = <0>;
         };
     };
