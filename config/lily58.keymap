@@ -30,14 +30,20 @@
 
         Hide {
             bindings = <&kp LC(H)>;
-            key-positions = <28 29>;
+            key-positions = <28 27>;
             layers = <0>;
         };
 
         ctrlR {
             bindings = <&kp LC(R)>;
-            key-positions = <26 27>;
+            key-positions = <26 25>;
             layers = <0>;
+        };
+
+        screenshot {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <0 1>;
+            layers = <0 3>;
         };
     };
 
