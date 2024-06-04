@@ -54,11 +54,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp Z          &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_SUBTRACT  &kp LC(V)                             &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &pa
-&kp TAB           &kp Q          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LC(Y)                             &bt BT_CLR_ALL  &kp U         &kp I            &kp O         &kp P         &kp MINUS
-&kp LEFT_SHIFT    &kp BACKSPACE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS                           &kp H           &kp J         &kp K            &kp L         &kp SEMI      &kp SQT
-&kp LEFT_CONTROL  &kp COMMA      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &kp DEL        &tog 3   &kp N           &kp M         &kp COMMA        &kp DOT       &kp FSLH      &kp RSHFT
-                                                  &kp SPACE        &kp KP_NUMBER_0  &lt 2 KP_DOT  &lt 1 SPACE    &kp RET  &kp BACKSPACE   &kp BSPC      &kp LA(LC(DEL))
+&kp ESC           &kp Z          &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_SUBTRACT  &kp LC(V)                             &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &pa
+&kp TAB           &kp Q          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LC(Y)                             &bt BT_CLR_ALL  &kp U          &kp I            &kp O         &kp P         &kp MINUS
+&kp LEFT_SHIFT    &kp BACKSPACE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS                           &kp H           &kp J          &kp K            &kp L         &kp SEMI      &kp SQT
+&kp LEFT_CONTROL  &kp COMMA      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &kp DEL        &tog 3   &kp N           &kp M          &kp COMMA        &kp DOT       &kp FSLH      &kp RSHFT
+                                                  &kp SPACE        &kp KP_NUMBER_0  &lt 2 KP_DOT  &lt 1 SPACE    &kp RET  &kp BACKSPACE   &kp LG(RS(S))  &kp LA(LC(DEL))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
