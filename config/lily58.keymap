@@ -25,6 +25,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Hide {
+            bindings = <&kp LC(H)>;
+            key-positions = <26 28>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
