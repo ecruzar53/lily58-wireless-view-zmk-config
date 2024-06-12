@@ -17,13 +17,6 @@
             bindings = <&none &kp LS(T) &kp E &kp N &kp N &kp I &kp S &kp SPACE &kp LS(S) &kp A &kp L &kp A &kp D &kp SPACE &kp LS(F) &kp L &kp U &kp T &kp E &kp SPACE &kp LS(B) &kp A &kp S &kp S &kp N8 &kp N7 &kp POUND &kp RET>;
             label = "NEW_MACRO";
         };
-
-        Ca: Ca {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>;
-            label = "CA";
-        };
     };
 
     combos {
@@ -57,6 +50,30 @@
             bindings = <&kp ENTER>;
             key-positions = <19 20 21>;
             layers = <3>;
+        };
+
+        z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <2 1>;
+            layers = <0 2 3>;
+        };
+
+        y {
+            bindings = <&kp LC(Y)>;
+            key-positions = <3 4>;
+            layers = <0 2 3>;
+        };
+
+        c {
+            bindings = <&kp LC(C)>;
+            key-positions = <14 13>;
+            layers = <0 2 3>;
+        };
+
+        v {
+            bindings = <&kp LC(V)>;
+            key-positions = <15 16>;
+            layers = <0 3 2>;
         };
     };
 
@@ -93,11 +110,11 @@
 
             display-name = "Lower";
             bindings = <
-&none  &kp LEFT_SHIFT    &kp C_VOLUME_DOWN  &mkp RCLK         &kp C_VOLUME_UP  &kp LC(C)                    &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_CONTROL  &mkp LCLK          &kp LS(UP_ARROW)  &mkp MCLK        &kp LC(Z)                    &none  &none  &none  &none  &none  &none
-&none  &none             &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(RIGHT)    &none                        &none  &none  &none  &none  &none  &none
-&none  &none             &none              &none             &none            &none      &none     &trans  &none  &none  &none  &none  &none  &none
-                                            &none             &none            &none      &trans    &none   &none  &none  &none
+&none  &kp LEFT_SHIFT    &kp C_VOLUME_DOWN  &mkp RCLK         &kp C_VOLUME_UP  &none                    &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_CONTROL  &mkp LCLK          &kp LS(UP_ARROW)  &mkp MCLK        &none                    &none  &none  &none  &none  &none  &none
+&none  &none             &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(RIGHT)    &none                    &none  &none  &none  &none  &none  &none
+&none  &none             &none              &none             &none            &none  &none     &trans  &none  &none  &none  &none  &none  &none
+                                            &none             &none            &none  &trans    &none   &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -113,11 +130,11 @@
 
             display-name = "Raise";
             bindings = <
-&none  &none  &kp LC(Z)  &none         &kp LC(Y)  &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &kp LC(C)  &kp UP_ARROW  &kp LC(V)  &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &kp LEFT   &kp DOWN      &kp RIGHT  &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &none      &none         &none      &none   &none    &trans  &none  &none  &none  &none  &none  &none
-                         &none         &none      &trans  &none    &none   &none  &none  &none
+&none  &none  &none     &none         &none      &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none     &kp UP_ARROW  &none      &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none                    &none  &none  &none  &none  &none  &none
+&none  &none  &none     &none         &none      &none   &none    &trans  &none  &none  &none  &none  &none  &none
+                        &none         &none      &trans  &none    &none   &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
