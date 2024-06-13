@@ -17,6 +17,14 @@
             bindings = <&none &kp LS(T) &kp E &kp N &kp N &kp I &kp S &kp SPACE &kp LS(S) &kp A &kp L &kp A &kp D &kp SPACE &kp LS(F) &kp L &kp U &kp T &kp E &kp SPACE &kp LS(B) &kp A &kp S &kp S &kp N8 &kp N7 &kp POUND &kp RET>;
             label = "NEW_MACRO";
         };
+
+        ctr_a_del: ctr_a_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LC(LA(DELETE)) &kp ENTER>;
+            label = "CTR_A_DEL";
+            tap-ms = <60>;
+        };
     };
 
     combos {
@@ -75,6 +83,22 @@
             key-positions = <15 16>;
             layers = <0 3 2>;
         };
+
+        layer.mouse {
+            bindings = <&tog 4>;
+            key-positions = <15 28>;
+            layers = <0 4>;
+        };
+
+        cadenter {
+            bindings = <&ctr_a_del>;
+            key-positions = <48 22>;
+        };
+
+        pa {
+            bindings = <&pa>;
+            key-positions = <23 49>;
+        };
     };
 
     keymap {
@@ -110,11 +134,11 @@
 
             display-name = "Lower";
             bindings = <
-&none             &kp LEFT_SHIFT    &kp C_VOLUME_DOWN  &mkp RCLK         &kp C_VOLUME_UP  &none                    &none  &none  &none  &none  &none  &none
-&none             &kp LEFT_CONTROL  &mkp LCLK          &kp LS(UP_ARROW)  &mkp MCLK        &none                    &none  &none  &none  &none  &none  &none
-&none             &none             &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(RIGHT)    &none                    &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &none             &kp PAGE_DOWN      &kp PAGE_UP       &none            &none  &none     &trans  &none  &none  &none  &none  &none  &none
-                                                       &none             &none            &none  &trans    &none   &none  &none  &none
+&none             &none  &none          &none             &none          &none                    &none  &none  &none  &none  &none  &none
+&none             &none  &none          &kp LS(UP_ARROW)  &none          &none                    &none  &none  &none  &none  &none  &none
+&none             &none  &kp LS(LEFT)   &kp LS(DOWN)      &kp LS(RIGHT)  &none                    &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &none  &kp PAGE_DOWN  &kp PAGE_UP       &none          &none  &none     &trans  &none  &none  &none  &none  &none  &none
+                                        &none             &none          &none  &trans    &none   &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -151,6 +175,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        layer_4 {
+            bindings = <
+&none             &none  &none              &none            &none      &none                      &none  &none  &none  &none  &none  &none
+&none             &none  &none              &kp LEFT_SHIFT   &none      &mkp RCLK                  &none  &none  &none  &none  &none  &none
+&none             &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &mkp MCLK  &mkp LCLK                  &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &none  &none              &none            &none      &none      &none    &none  &none  &none  &none  &none  &none  &none
+                                            &none            &sl 2      &sl 2      &sl 1    &none  &none  &none  &none
+            >;
         };
     };
 };
