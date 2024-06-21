@@ -166,11 +166,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp Z          &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_SUBTRACT  &kp LC(V)                                     &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4  &pa
-&kp TAB           &kp Q          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LC(Y)                                     &bt BT_CLR_ALL  &none           &mmv MOVE_UP     &kp O            &kp P         &kp MINUS
-&kp LEFT_SHIFT    &kp BACKSPACE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS                                   &kp H           &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp SEMI      &kp SQT
-&kp LEFT_CONTROL  &kp COMMA      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &kp DEL        &tog 3           &none           &none           &kp COMMA        &kp DOT          &kp FSLH      &kp RSHFT
-                                                  &kp SPACE        &kp KP_NUMBER_0  &lt 2 KP_DOT  &lt 1 SPACE    &mt ENTER SPACE  &kp BACKSPACE   &kp LG(RS(S))   &kp LA(LC(DEL))
+&kp ESC           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp BACKSPACE                                      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4  &pa
+&kp TAB           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp LC(Y)                                          &bt BT_CLR_ALL  &none           &mmv MOVE_UP     &kp O            &kp P         &kp MINUS
+&kp LEFT_SHIFT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &kp LC(V)                                          &kp H           &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp SEMI      &kp SQT
+&kp LEFT_CONTROL  &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS     &kp COMMA        &kp Z              &kp DEL        &tog 3           &none           &none           &kp COMMA        &kp DOT          &kp FSLH      &kp RSHFT
+                                                    &kp SPACE        &kp KP_DOT       &lt 2 KP_NUMBER_0  &lt 1 SPACE    &mt ENTER SPACE  &kp BACKSPACE   &kp LG(RS(S))   &kp LA(LC(DEL))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -186,11 +186,11 @@
 
             display-name = "Lower";
             bindings = <
-&rp               &smth      &ad                &vd               &hole          &kp SLASH                    &none  &none  &none  &none  &none  &none
-&hd               &c2        &none              &kp LS(UP_ARROW)  &none          &none                        &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &c1        &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(RIGHT)  &mkp RCLK                    &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &mkp LCLK  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &mkp MCLK      &none      &none     &trans  &none  &none  &none  &none  &none  &none
-                                                &none             &none          &none      &trans    &none   &none  &none  &none
+&rp               &kp SLASH     &kp LS(UP_ARROW)    &hole            &vd        &ad                          &none  &none  &none  &none  &none  &none
+&hd               &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)    &smth      &none                        &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &c1           &c2                 &none            &none      &mkp RCLK                    &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &mkp LCLK     &kp C_VOLUME_DOWN   &kp C_VOLUME_UP  &mkp MCLK  &none      &none     &trans  &none  &none  &none  &none  &none  &none
+                                                    &none            &none      &none      &trans    &none   &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -206,11 +206,11 @@
 
             display-name = "Raise";
             bindings = <
-&none  &none  &none     &none         &none      &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &none     &kp UP_ARROW  &none      &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none         &none      &none   &none    &trans  &none  &none  &none  &none  &none  &none
-                        &none         &none      &trans  &none    &none   &none  &none  &none
+&none  &none     &kp UP_ARROW    &none      &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none     &none           &none      &none  &none                    &none  &none  &none  &none  &none  &none
+&none  &none     &none           &none      &none  &none   &none    &trans  &none  &none  &none  &none  &none  &none
+                                 &none      &none  &trans  &none    &none   &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
