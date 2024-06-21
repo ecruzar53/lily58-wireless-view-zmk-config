@@ -207,7 +207,7 @@
             display-name = "Raise";
             bindings = <
 &none  &none     &kp UP_ARROW    &none      &none  &none                       &none  &none  &none  &none  &none  &none
-&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &kp LC(U)                   &none  &none  &none  &none  &none  &none
+&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &kp LC(Z)                   &none  &none  &none  &none  &none  &none
 &none  &none     &none           &none      &none  &kp LC(C)                   &none  &none  &none  &none  &none  &none
 &none  &none     &none           &none      &none  &none      &none    &trans  &none  &none  &none  &none  &none  &none
                                  &none      &none  &trans     &none    &none   &none  &none  &none
