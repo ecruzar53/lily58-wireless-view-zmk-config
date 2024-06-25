@@ -81,6 +81,24 @@
             bindings = <&none &kp AT &kp LS(C) &kp N2>;
             label = "C2";
         };
+
+        navis: navis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp STAR &kp N8 &kp RET &kp Y>;
+            label = "NAVIS";
+        };
+
+        refresh: refresh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none &kp LC(F2) &kp F5>,
+                <&macro_wait_time 6000>,
+                <&kp LC(F2)>;
+
+            label = "REFRESH";
+        };
     };
 
     combos {
@@ -88,13 +106,13 @@
 
         Hide {
             bindings = <&kp LC(H)>;
-            key-positions = <28 27>;
+            key-positions = <14 15>;
             layers = <0>;
         };
 
         ctrlR {
             bindings = <&kp LC(R)>;
-            key-positions = <26 25>;
+            key-positions = <12 13>;
             layers = <0>;
         };
 
@@ -106,7 +124,7 @@
 
         Layer3 {
             bindings = <&tog 3>;
-            key-positions = <12 13>;
+            key-positions = <12 0>;
             layers = <0 3>;
         };
 
@@ -118,37 +136,37 @@
 
         z {
             bindings = <&kp LC(Z)>;
-            key-positions = <2 1>;
+            key-positions = <1 0>;
             layers = <0 2 3>;
         };
 
         y {
             bindings = <&kp LC(Y)>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             layers = <0 2 3>;
         };
 
         c {
             bindings = <&kp LC(C)>;
-            key-positions = <14 13>;
+            key-positions = <24 25>;
             layers = <0 2 3>;
         };
 
         v {
             bindings = <&kp LC(V)>;
-            key-positions = <15 16>;
+            key-positions = <26 27>;
             layers = <0 3 2>;
         };
 
         cadenter {
             bindings = <&ctr_a_del>;
-            key-positions = <48 22>;
+            key-positions = <48 10>;
             layers = <0>;
         };
 
         pa {
             bindings = <&pa>;
-            key-positions = <23 49>;
+            key-positions = <49 11>;
             layers = <0>;
         };
     };
@@ -166,11 +184,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp BACKSPACE                                      &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &pa
-&kp TAB           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp LC(Y)                                          &bt BT_CLR_ALL  &none          &none            &kp O         &kp P         &kp MINUS
-&kp LEFT_SHIFT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &kp LC(V)                                          &kp H           &none          &none            &none         &kp SEMI      &kp SQT
-&kp LEFT_CONTROL  &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS     &kp COMMA        &kp Z              &kp DEL        &tog 3           &none           &none          &kp COMMA        &kp DOT       &kp FSLH      &kp RSHFT
-                                                    &kp SPACE        &kp KP_DOT       &lt 2 KP_NUMBER_0  &lt 1 SPACE    &mt ENTER SPACE  &kp BACKSPACE   &kp LG(RS(S))  &kp LA(LC(DEL))
+&kp ESC           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp BACKSPACE                                      &kp A          &kp B          &kp B            &kp B    &kp A     &kp A
+&kp TAB           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp LC(Y)                                          &kp B          &none          &none            &kp O    &kp P     &kp MINUS
+&kp LEFT_SHIFT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &kp LC(V)                                          &kp H          &none          &none            &none    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp KP_SLASH     &kp KP_MULTIPLY  &kp E            &kp COMMA        &kp Z              &kp DEL        &tog 3           &none          &none          &kp COMMA        &kp DOT  &kp FSLH  &kp RSHFT
+                                                    &kp SPACE        &kp KP_DOT       &lt 2 KP_NUMBER_0  &lt 1 SPACE    &mt ENTER SPACE  &kp BACKSPACE  &kp LG(RS(S))  &kp LA(LC(DEL))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -206,11 +224,11 @@
 
             display-name = "Raise";
             bindings = <
-&none  &none     &kp UP_ARROW    &none      &none  &none                       &none  &none  &none  &none  &none  &none
-&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &kp LC(Z)                   &none  &none  &none  &none  &none  &none
-&none  &none     &none           &none      &none  &kp LC(C)                   &none  &none  &none  &none  &none  &none
-&none  &none     &none           &none      &none  &none      &none    &trans  &none  &none  &none  &none  &none  &none
-                                 &none      &none  &trans     &none    &none   &none  &none  &none
+&none         &none         &kp UP_ARROW    &none         &none         &none                        &none  &none  &none  &none  &none  &none
+&none         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &none         &kp LC(Z)                    &none  &none  &none  &none  &none  &none
+&none         &none         &none           &none         &none         &kp LC(C)                    &none  &none  &none  &none  &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &none    &trans  &none  &none  &none  &none  &none  &none
+                                            &none         &none         &trans      &none    &none   &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
