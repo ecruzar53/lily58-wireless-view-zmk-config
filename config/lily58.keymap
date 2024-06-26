@@ -246,7 +246,7 @@
 &kp TAB           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp LC(Y)                                      &kp LC(Y)          &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp TAB
 &kp LEFT_SHIFT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &kp LC(V)                                      &kp LC(V)          &kp KP_ENTER  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp RIGHT_SHIFT
 &kp LEFT_CONTROL  &kp KP_SLASH     &kp KP_MULTIPLY  &kp Y            &kp COMMA        &kp Z              &kp DEL        &tog 3       &kp Z              &kp COMMA     &kp Y            &kp KP_MULTIPLY  &kp LC(KP_SLASH)  &kp RIGHT_CONTROL
-                                                    &kp SPACE        &kp KP_DOT       &lt 2 KP_NUMBER_0  &lt 1 SPACE    &lt 1 SPACE  &lt 2 KP_NUMBER_0  &kp KP_DOT    &kp LA(LC(DEL))
+                                                    &kp SPACE        &kp KP_DOT       &lt 2 KP_NUMBER_0  &lt 1 SPACE    &lt 1 SPACE  &lt 2 KP_NUMBER_0  &kp KP_DOT    &kp SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
