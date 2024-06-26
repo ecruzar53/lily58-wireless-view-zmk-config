@@ -184,11 +184,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp BACKSPACE                                      &kp A          &kp B          &kp B            &kp B    &kp A     &kp A
-&kp TAB           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp LC(Y)                                          &kp B          &none          &none            &kp O    &kp P     &kp MINUS
-&kp LEFT_SHIFT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &kp LC(V)                                          &kp H          &none          &none            &none    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp KP_SLASH     &kp KP_MULTIPLY  &kp E            &kp COMMA        &kp Z              &kp DEL        &tog 3           &none          &none          &kp COMMA        &kp DOT  &kp FSLH  &kp RSHFT
-                                                    &kp SPACE        &kp KP_DOT       &lt 2 KP_NUMBER_0  &lt 1 SPACE    &mt ENTER SPACE  &kp BACKSPACE  &kp LG(RS(S))  &kp LA(LC(DEL))
+&kp ESC           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp BACKSPACE                                  &kp BACKSPACE      &kp KP_MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp ESC
+&kp TAB           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp LC(Y)                                      &kp LC(Y)          &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp TAB
+&kp LEFT_SHIFT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &kp LC(V)                                      &kp LC(V)          &kp KP_ENTER  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp KP_SLASH     &kp KP_MULTIPLY  &kp Y            &kp COMMA        &kp Z              &kp DEL        &tog 3       &kp Z              &kp COMMA     &kp Y            &kp KP_MULTIPLY  &kp LC(KP_SLASH)  &kp RIGHT_CONTROL
+                                                    &kp SPACE        &kp KP_DOT       &lt 2 KP_NUMBER_0  &lt 1 SPACE    &lt 1 SPACE  &lt 2 KP_NUMBER_0  &kp KP_DOT    &kp LA(LC(DEL))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
