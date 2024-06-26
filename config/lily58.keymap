@@ -85,7 +85,7 @@
         navis: navis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp STAR &kp N8 &kp RET &kp Y>;
+            bindings = <&none &kp KP_NUMBER_2 &kp KP_ASTERISK &kp RET &kp Y>;
             label = "NAVIS";
         };
 
@@ -216,6 +216,16 @@
             bindings = <&kp LC(V)>;
             key-positions = <34 35>;
             layers = <0 3 2>;
+        };
+
+        navis {
+            bindings = <&navis>;
+            key-positions = <0 3>;
+        };
+
+        refresh {
+            bindings = <&refresh>;
+            key-positions = <12 15>;
         };
     };
 
