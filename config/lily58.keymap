@@ -221,11 +221,13 @@
         navis {
             bindings = <&navis>;
             key-positions = <0 3>;
+            layers = <0>;
         };
 
         refresh {
             bindings = <&refresh>;
             key-positions = <12 15>;
+            layers = <0>;
         };
     };
 
