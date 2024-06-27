@@ -94,7 +94,7 @@
             #binding-cells = <0>;
             bindings =
                 <&none &kp LC(F2) &kp F5>,
-                <&macro_wait_time 6000>,
+                <&macro_wait_time 20000>,
                 <&kp LC(F2)>;
 
             label = "REFRESH";
