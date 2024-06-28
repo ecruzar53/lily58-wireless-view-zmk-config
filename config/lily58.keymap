@@ -87,9 +87,9 @@
             #binding-cells = <0>;
             bindings =
                 <&none &kp KP_NUMBER_2>,
-                <&macro_wait_time 1000>,
+                <&macro_wait_time 850>,
                 <&kp KP_ASTERISK &kp RET>,
-                <&macro_wait_time 1200>,
+                <&macro_wait_time 1000>,
                 <&kp Y>;
 
             label = "NAVIS";
