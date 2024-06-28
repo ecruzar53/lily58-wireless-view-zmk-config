@@ -86,9 +86,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&none &kp KP_NUMBER_2 &kp KP_ASTERISK>,
+                <&none &kp KP_NUMBER_2>,
                 <&macro_wait_time 1000>,
-                <&kp RET>,
+                <&kp KP_ASTERISK &kp RET>,
                 <&macro_wait_time 1000>,
                 <&kp Y>;
 
@@ -99,9 +99,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&none &kp LC(F2) &kp F5>,
+                <&none &kp LC(F2)>,
                 <&macro_wait_time 20000>,
-                <&kp LC(F2)>;
+                <&kp F5 &kp LC(F2)>;
 
             label = "REFRESH";
         };
