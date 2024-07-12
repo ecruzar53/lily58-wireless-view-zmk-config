@@ -16,7 +16,7 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(T) &kp E &kp N &kp N &kp I &kp S &kp SPACE &kp LS(S) &kp A &kp L &kp A &kp D &kp SPACE &kp LS(F) &kp L &kp U &kp T &kp E &kp SPACE &kp LS(B) &kp A &kp S &kp S &kp N8 &kp N7 &kp POUND &kp RET>;
             label = "NEW_MACRO";
-            wait-ms = <500>;
+            wait-ms = <100>;
         };
 
         ctr_a_del: ctr_a_del {
@@ -295,11 +295,11 @@
 
             display-name = "Lower";
             bindings = <
-&rp               &kp SLASH     &kp LS(UP_ARROW)    &hole            &vd        &ad                          &none  &none  &none  &none  &none  &none
-&hd               &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)    &smth      &none                        &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &c1           &c2                 &none            &none      &mkp RCLK                    &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &mkp LCLK     &kp C_VOLUME_DOWN   &kp C_VOLUME_UP  &mkp MCLK  &none      &none     &trans  &none  &none  &none  &none  &none  &none
-                                                    &none            &none      &none      &trans    &none   &none  &none  &none
+&rp               &kp SLASH     &kp LS(UP_ARROW)    &hole            &vd        &ad                          &none      &none      &none               &kp LS(UP)         &none          &none
+&hd               &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)    &smth      &none                        &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
+&kp LEFT_SHIFT    &c1           &c2                 &none            &none      &mkp RCLK                    &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
+&kp LEFT_CONTROL  &mkp LCLK     &kp C_VOLUME_DOWN   &kp C_VOLUME_UP  &mkp MCLK  &none      &none     &trans  &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
+                                                    &none            &none      &none      &trans    &none   &none      &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -328,11 +328,11 @@
         layer_5 {
             display-name = "QWERTY";
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                    &kp N6         &kp N7     &kp N8           &kp N9   &kp N0    &kp DEL
-&kp TAB           &kp Q   &kp W   &kp E     &kp R     &kp T                                     &kp Y          &kp U      &kp I            &kp O    &kp P     &kp MINUS
-&kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F     &kp G                                     &kp H          &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V     &kp B           &kp LBKT       &trans     &kp N          &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LALT  &kp LGUI  &kp LEFT_SHIFT  &lt 2 SPACE    &kp SPACE  &kp BACKSPACE  &kp ENTER  &kp LC(LA(DEL))
+&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                 &kp N6         &kp N7     &kp N8           &kp N9   &kp N0    &kp DEL
+&kp TAB           &kp Q   &kp W   &kp E     &kp R     &kp T                                  &kp Y          &kp U      &kp I            &kp O    &kp P     &kp MINUS
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F     &kp G                                  &kp H          &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V     &kp B           &kp LBKT    &trans     &kp N          &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp RSHFT
+                                  &kp LALT  &kp LGUI  &kp LEFT_SHIFT  &mo 2       &kp SPACE  &kp BACKSPACE  &kp ENTER  &kp LC(LA(DEL))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
