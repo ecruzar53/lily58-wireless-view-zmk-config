@@ -88,9 +88,9 @@
             #binding-cells = <0>;
             bindings =
                 <&none &kp KP_NUMBER_2>,
-                <&macro_wait_time 850>,
+                <&macro_wait_time 700>,
                 <&kp KP_ASTERISK &kp RET>,
-                <&macro_wait_time 1000>,
+                <&macro_wait_time 850>,
                 <&kp Y>;
 
             label = "NAVIS";
@@ -100,9 +100,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&none>,
-                <&macro_wait_time 1000>,
-                <&kp LC(F2)>,
+                <&none &kp LC(F2)>,
                 <&macro_wait_time 20000>,
                 <&kp F5 &kp LC(F2)>;
 
