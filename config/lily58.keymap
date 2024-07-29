@@ -16,7 +16,7 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(T) &kp E &kp N &kp N &kp I &kp S &kp SPACE &kp LS(S) &kp A &kp L &kp A &kp D &kp SPACE &kp LS(F) &kp L &kp U &kp T &kp E &kp SPACE &kp LS(B) &kp A &kp S &kp S &kp N8 &kp N7 &kp POUND &kp RET>;
             label = "NEW_MACRO";
-            wait-ms = <50>;
+            wait-ms = <20>;
         };
 
         ctr_a_del: ctr_a_del {
