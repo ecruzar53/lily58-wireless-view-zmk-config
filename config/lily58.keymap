@@ -293,11 +293,11 @@
 
             display-name = "Lower";
             bindings = <
-&rp               &kp SLASH     &kp LS(UP_ARROW)    &hole            &vd        &ad                          &none      &none      &none               &kp LS(UP)         &none          &none
-&hd               &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)    &smth      &none                        &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
-&kp LEFT_SHIFT    &c1           &c2                 &none            &none      &mkp RCLK                    &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
-&kp LEFT_CONTROL  &mkp LCLK     &kp C_VOLUME_DOWN   &kp C_VOLUME_UP  &mkp MCLK  &none      &none     &trans  &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
-                                                    &none            &none      &none      &trans    &none   &none      &none      &none
+&rp               &kp SLASH          &kp LS(UP_ARROW)    &hole          &vd        &ad                      &none      &none      &none               &kp LS(UP)         &none          &none
+&hd               &kp LS(LEFT)       &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &smth      &none                    &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
+&kp LEFT_SHIFT    &c1                &c2                 &mkp LCLK      &none      &none                    &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
+&kp LEFT_CONTROL  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &mkp MCLK      &mkp RCLK  &none  &none     &trans  &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
+                                                         &none          &none      &none  &trans    &none   &none      &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
