@@ -106,6 +106,14 @@
 
             label = "REFRESH";
         };
+
+        create_sleeve: create_sleeve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp TAB &kp SPACE &kp TAB &kp TAB &kp SPACE &kp ESCAPE>;
+            label = "CREATE_SLEEVE";
+            wait-ms = <20>;
+        };
     };
 
     combos {
@@ -257,6 +265,12 @@
         de1 {
             bindings = <&kp DEL>;
             key-positions = <6 43>;
+        };
+
+        sleeve {
+            bindings = <&create_sleeve>;
+            key-positions = <24 27>;
+            layers = <0>;
         };
     };
 
