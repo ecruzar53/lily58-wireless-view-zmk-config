@@ -272,12 +272,6 @@
             key-positions = <24 27>;
             layers = <0>;
         };
-
-        N. {
-            bindings = <&kp N>;
-            key-positions = <13 16>;
-            layers = <0>;
-        };
     };
 
     keymap {
