@@ -272,6 +272,11 @@
             key-positions = <24 27>;
             layers = <0>;
         };
+
+        nnn {
+            bindings = <&kp N>;
+            key-positions = <13 16>;
+        };
     };
 
     keymap {
