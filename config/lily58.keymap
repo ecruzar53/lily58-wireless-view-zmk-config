@@ -371,7 +371,7 @@
 &kp LS(A)  &kp LS(B)  &kp LS(C)  &kp LS(D)  &kp LS(E)  &kp LS(F)                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LS(G)  &kp LS(H)  &kp LS(I)  &kp LS(J)  &kp LS(K)  &kp LS(L)                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp LS(M)  &kp LS(N)  &kp LS(O)  &kp LS(P)  &kp LS(Q)  &kp LS(R)                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(S)  &kp LS(T)  &kp LS(U)  &kp LS(V)  &kp LS(W)  &kp LS(X)  &kp LS(Y)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(S)  &kp LS(T)  &kp LS(U)  &kp LS(V)  &kp LS(W)  &kp LS(X)  &kp LS(Y)    &kp D   &trans  &trans  &trans  &trans  &trans  &trans
                                  &trans     &trans     &trans     &kp LS(Z)    &trans  &trans  &trans  &trans
             >;
         };
