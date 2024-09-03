@@ -133,7 +133,7 @@
 
         screenshot {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <0 36>;
+            key-positions = <1 37>;
             layers = <0 3>;
         };
 
@@ -276,6 +276,11 @@
         nnn {
             bindings = <&kp N>;
             key-positions = <13 16>;
+        };
+
+        greenshot {
+            bindings = <&kp LA(F12)>;
+            key-positions = <0 36>;
         };
     };
 
