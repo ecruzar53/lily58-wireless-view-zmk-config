@@ -288,6 +288,11 @@
             bindings = <&kp LC(LG(LA(V)))>;
             key-positions = <14 27>;
         };
+
+        rgbOFF {
+            bindings = <&rgb_ug RGB_OFF>;
+            key-positions = <57 47>;
+        };
     };
 
     keymap {
