@@ -334,11 +334,11 @@
 
             display-name = "Lower";
             bindings = <
-&rp               &kp SLASH          &kp LS(UP_ARROW)    &hole          &vd            &ad                         &none      &none      &kp F14             &kp F15            &kp F16        &kp F17
-&hd               &kp LS(LEFT)       &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &none                       &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
-&kp LEFT_SHIFT    &c1                &c2                 &mkp LCLK      &kp PAGE_DOWN  &none                       &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
-&kp LEFT_CONTROL  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &mkp MCLK      &mkp RCLK      &none  &none     &trans     &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
-                                                         &none          &none          &none  &trans    &mkp RCLK  &none      &none      &none
+&rp               &kp SLASH          &kp LS(UP_ARROW)    &hole          &vd            &ad                            &none      &none      &kp F14             &kp F15            &kp F16        &kp F17
+&hd               &kp LS(LEFT)       &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &kp HOME                       &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
+&kp LEFT_SHIFT    &c1                &c2                 &mkp LCLK      &kp PAGE_DOWN  &kp END                        &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
+&kp LEFT_CONTROL  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &mkp MCLK      &mkp RCLK      &none     &none     &trans     &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
+                                                         &none          &none          &none     &trans    &mkp RCLK  &none      &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
