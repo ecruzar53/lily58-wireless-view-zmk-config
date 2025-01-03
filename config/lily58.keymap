@@ -116,6 +116,13 @@
             label = "CREATE_SLEEVE";
             wait-ms = <20>;
         };
+
+        batchForm: batchForm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp NUMBER_1 &kp TAB &kp TAB &kp DOWN &kp ENTER &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp O &kp N &kp E &kp TAB &kp ENTER &kp ESCAPE &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE>;
+            label = "BATCHFORM";
+        };
     };
 
     combos {
@@ -288,6 +295,11 @@
         strlS {
             bindings = <&kp LC(S)>;
             key-positions = <13 14>;
+        };
+
+        batch {
+            bindings = <&batchForm>;
+            key-positions = <4 5>;
         };
     };
 
