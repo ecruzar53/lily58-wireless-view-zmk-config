@@ -122,7 +122,7 @@
             #binding-cells = <0>;
             bindings = <&none &kp NUMBER_1 &kp TAB &kp TAB &kp DOWN &kp ENTER &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp O &kp N &kp E &kp TAB &kp ENTER &kp ESCAPE &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE>;
             label = "BATCHFORM";
-            wait-ms = <12>;
+            wait-ms = <30>;
         };
     };
 
