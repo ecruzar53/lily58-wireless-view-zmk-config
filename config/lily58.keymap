@@ -259,25 +259,10 @@
             layers = <0>;
         };
 
-        de {
-            bindings = <&kp DEL>;
-            key-positions = <5 42>;
-        };
-
-        de1 {
-            bindings = <&kp DEL>;
-            key-positions = <6 43>;
-        };
-
         sleeve {
             bindings = <&create_sleeve>;
             key-positions = <24 27>;
             layers = <0>;
-        };
-
-        nnn {
-            bindings = <&kp N>;
-            key-positions = <13 16>;
         };
 
         greenshot {
@@ -298,6 +283,11 @@
         ctrlP {
             bindings = <&kp LC(P)>;
             key-positions = <1 2>;
+        };
+
+        strlS {
+            bindings = <&kp LC(S)>;
+            key-positions = <13 14>;
         };
     };
 
