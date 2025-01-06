@@ -258,13 +258,13 @@
 
         cadright {
             bindings = <&ctr_a_del>;
-            key-positions = <17 4>;
+            key-positions = <17 5>;
             layers = <0>;
         };
 
         paleft {
             bindings = <&pa>;
-            key-positions = <3 16>;
+            key-positions = <16 4>;
             layers = <0>;
         };
 
