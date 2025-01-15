@@ -179,7 +179,7 @@
         };
 
         v {
-            bindings = <&kp LC(V)>;
+            bindings = <&mt LC(LS(V)) LC(V)>;
             key-positions = <26 27>;
             layers = <0 3 2>;
         };
@@ -310,7 +310,7 @@
         };
 
         ctrlG {
-            bindings = <&kp LC(G)>;
+            bindings = <&mt LC(LS(G)) LC(G)>;
             key-positions = <37 38>;
         };
     };
