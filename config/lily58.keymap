@@ -303,6 +303,16 @@
             bindings = <&batchForm>;
             key-positions = <4 5>;
         };
+
+        ctrlA {
+            bindings = <&kp LC(A)>;
+            key-positions = <25 26>;
+        };
+
+        ctrlG {
+            bindings = <&kp LC(G)>;
+            key-positions = <37 38>;
+        };
     };
 
     keymap {
@@ -338,8 +348,8 @@
 
             display-name = "Lower";
             bindings = <
-&rp               &kp SLASH          &kp LS(UP_ARROW)    &hole          &vd            &ad                            &none      &none      &kp F14             &kp F15            &kp F16        &kp F17
-&hd               &kp LS(LEFT)       &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &kp HOME                       &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
+&hd               &kp SLASH          &kp LS(UP_ARROW)    &hole          &vd            &ad                            &none      &none      &kp F14             &kp F15            &kp F16        &kp F17
+&none             &kp LS(LEFT)       &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &kp HOME                       &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
 &kp LEFT_SHIFT    &c1                &c2                 &mkp LCLK      &kp PAGE_DOWN  &kp END                        &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
 &kp LEFT_CONTROL  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &mkp MCLK      &mkp RCLK      &none     &none     &trans     &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
                                                          &none          &none          &none     &trans    &mkp RCLK  &none      &none      &none
@@ -358,11 +368,11 @@
 
             display-name = "Raise";
             bindings = <
-&none         &none         &kp UP_ARROW    &none         &none         &none                         &none  &none  &none  &none  &none  &none
-&none         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &none         &kp LC(Z)                     &none  &none  &none  &none  &none  &none
-&none         &none         &none           &none         &none         &kp LC(C)                     &none  &none  &none  &none  &none  &none
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &none     &trans  &none  &none  &none  &none  &none  &none
-                                            &none         &none         &trans      &trans    &none   &none  &none  &none
+&none         &none         &kp UP_ARROW    &none         &none         &none                            &none  &none  &none  &none  &none  &none
+&none         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp LC(UP)    &none                            &none  &none  &none  &none  &none  &none
+&none         &none         &none           &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)                    &none  &none  &none  &none  &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR     &none     &trans  &none  &none  &none  &none  &none  &none
+                                            &none         &none         &trans         &trans    &none   &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
