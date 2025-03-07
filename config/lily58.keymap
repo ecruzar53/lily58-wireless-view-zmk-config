@@ -313,6 +313,11 @@
             bindings = <&mt LC(LS(G)) LC(G)>;
             key-positions = <37 38>;
         };
+
+        wind_tab {
+            bindings = <&kp LG(LEFT_SHIFT)>;
+            key-positions = <40 41>;
+        };
     };
 
     keymap {
