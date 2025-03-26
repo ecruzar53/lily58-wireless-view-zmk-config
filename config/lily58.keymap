@@ -167,13 +167,13 @@
         };
 
         y {
-            bindings = <&kp LC(Y)>;
+            bindings = <&mt LC(LS(Y)) LC(Y)>;
             key-positions = <3 2>;
             layers = <0 2 3>;
         };
 
         c {
-            bindings = <&mt LC(LA(C)) LC(C)>;
+            bindings = <&mt LC(LG(C)) LC(C)>;
             key-positions = <24 25>;
             layers = <0 2 3>;
         };
