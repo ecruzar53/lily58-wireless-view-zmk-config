@@ -150,7 +150,7 @@
 
         Layer3 {
             bindings = <&tog 3>;
-            key-positions = <25 26 27 28>;
+            key-positions = <13 14 15 16>;
             layers = <0 3>;
         };
 
@@ -181,7 +181,7 @@
         v {
             bindings = <&mt LC(LS(V)) LC(V)>;
             key-positions = <26 27>;
-            layers = <0 3 2>;
+            layers = <0 2>;
         };
 
         cadenter {
@@ -307,6 +307,7 @@
         ctrlA {
             bindings = <&mt LS(LC(A)) LC(A)>;
             key-positions = <25 26>;
+            layers = <0 1>;
         };
 
         ctrlG {
