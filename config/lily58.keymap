@@ -241,7 +241,7 @@
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <34 35>;
-            layers = <0 3 2>;
+            layers = <0 2>;
         };
 
         navis {
