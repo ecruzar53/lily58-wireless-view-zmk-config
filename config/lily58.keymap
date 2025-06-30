@@ -150,7 +150,7 @@
 
         Layer3 {
             bindings = <&tog 3>;
-            key-positions = <13 14 15 16>;
+            key-positions = <25 26 27 28>;
             layers = <0 3>;
         };
 
@@ -323,6 +323,11 @@
         color-Processing {
             bindings = <&mt RS(LC(F3)) RS(F3)>;
             key-positions = <40 41>;
+        };
+
+        d {
+            bindings = <&mt LC(LS(D)) LC(D)>;
+            key-positions = <38 39>;
         };
     };
 
