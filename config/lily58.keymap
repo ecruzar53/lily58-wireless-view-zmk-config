@@ -125,6 +125,13 @@
             wait-ms = <100>;
             tap-ms = <30>;
         };
+
+        toggle: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 3 &kp LC(LS(LA(F13)))>;
+            label = "NEW_MACRO";
+        };
     };
 
     combos {
@@ -149,7 +156,7 @@
         };
 
         Layer3 {
-            bindings = <&tog 3>;
+            bindings = <&toggle>;
             key-positions = <25 26 27 28>;
             layers = <0 3>;
         };
