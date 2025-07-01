@@ -126,11 +126,11 @@
             tap-ms = <30>;
         };
 
-        toggle: new_macro {
+        toggle: toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog 3 &kp LC(LS(LA(F13)))>;
-            label = "NEW_MACRO";
+            label = "TOGGLE";
         };
     };
 
