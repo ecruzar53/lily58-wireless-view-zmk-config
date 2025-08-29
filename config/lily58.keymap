@@ -138,7 +138,7 @@
         compatible = "zmk,combos";
 
         Hide {
-            bindings = <&kp LC(H)>;
+            bindings = <&mt LC(K) LC(I)>;
             key-positions = <14 15>;
             layers = <0>;
         };
@@ -336,6 +336,11 @@
             bindings = <&mt LC(LS(D)) LC(D)>;
             key-positions = <38 39>;
         };
+
+        text_screenshot {
+            bindings = <&kp LS(LC(L))>;
+            key-positions = <0 37>;
+        };
     };
 
     keymap {
@@ -372,7 +377,7 @@
             display-name = "Lower";
             bindings = <
 &hd               &kp SLASH     &kp LS(UP_ARROW)    &hole          &vd            &ad                            &none      &none      &kp F14             &kp F15            &kp F16        &kp F17
-&none             &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &kp HOME                       &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
+&rp               &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &kp HOME                       &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
 &kp LEFT_SHIFT    &c1           &c2                 &mkp MB1       &kp PAGE_DOWN  &kp END                        &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
 &kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_VOL_UP        &mkp MB3       &mkp MB2       &none     &none     &trans     &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
                                                     &none          &none          &none     &trans    &mkp RCLK  &none      &none      &none
