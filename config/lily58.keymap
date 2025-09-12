@@ -150,7 +150,7 @@
         };
 
         screenshot {
-            bindings = <&kp LG(LS(S))>;
+            bindings = <&kp LS(LA(LC(F1)))>;
             key-positions = <1 37>;
             layers = <0 3>;
         };
@@ -376,10 +376,10 @@
 
             display-name = "Lower";
             bindings = <
-&hd               &kp SLASH     &kp LS(UP_ARROW)    &hole          &vd            &ad                            &none      &none      &kp F14             &kp F15            &kp F16        &kp F17
-&rp               &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &kp HOME                       &none      &none      &kp LS(LEFT_ARROW)  &kp LS(DOWN)       &kp LS(RIGHT)  &none
-&kp LEFT_SHIFT    &c1           &c2                 &mkp MB1       &kp PAGE_DOWN  &kp END                        &mkp RCLK  &none      &none               &none              &none          &kp LSHIFT
-&kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_VOL_UP        &mkp MB3       &mkp MB2       &none     &none     &trans     &none      &mkp MCLK  &kp C_VOLUME_UP     &kp C_VOLUME_DOWN  &mkp LCLK      &kp LEFT_CONTROL
+&hd               &kp SLASH     &kp LS(UP_ARROW)    &hole          &vd            &ad                            &none      &none      &kp LC(LA(F14))  &kp LC(LA(F15))    &kp LC(LA(F16))  &kp LC(LA(F17))
+&rp               &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &kp PAGE_UP    &kp HOME                       &none      &none      &kp LA(LC(F18))  &kp LA(LC(F19))    &kp LC(LA(F20))  &kp LA(LC(F21))
+&kp LEFT_SHIFT    &c1           &c2                 &mkp MB1       &kp PAGE_DOWN  &kp END                        &mkp RCLK  &none      &none            &none              &none            &kp LSHIFT
+&kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_VOL_UP        &mkp MB3       &mkp MB2       &none     &none     &trans     &none      &mkp MCLK  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &mkp LCLK        &kp LEFT_CONTROL
                                                     &none          &none          &none     &trans    &mkp RCLK  &none      &none      &none
             >;
 
