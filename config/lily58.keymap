@@ -34,6 +34,7 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(H) &kp LS(O) &kp LS(L) &kp LS(E)>;
             label = "HOLE";
+            wait-ms = <20>;
         };
 
         vd: vd {
@@ -138,7 +139,7 @@
         compatible = "zmk,combos";
 
         Hide {
-            bindings = <&mt LC(K) LC(I)>;
+            bindings = <&mt LC(LS(K)) LC(K)>;
             key-positions = <14 15>;
             layers = <0>;
         };
@@ -180,7 +181,7 @@
         };
 
         c {
-            bindings = <&mt LC(LG(C)) LC(C)>;
+            bindings = <&kp LC(C)>;
             key-positions = <24 25>;
             layers = <0 2 3>;
         };
@@ -308,7 +309,7 @@
 
         batch {
             bindings = <&batchForm>;
-            key-positions = <4 5>;
+            key-positions = <5 4 3>;
         };
 
         ctrlA {
@@ -340,6 +341,11 @@
         text_screenshot {
             bindings = <&kp LS(LC(L))>;
             key-positions = <0 37>;
+        };
+
+        invert {
+            bindings = <&kp LC(LG(C))>;
+            key-positions = <4 17>;
         };
     };
 
@@ -396,7 +402,7 @@
 
             display-name = "Raise";
             bindings = <
-&none         &none         &kp UP_ARROW    &none         &none         &none                            &none  &none  &none  &none  &none  &none
+&none         &none         &kp UP_ARROW    &kp LC(F)     &none         &none                            &none  &none  &none  &none  &none  &none
 &none         &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp LC(UP)    &none                            &none  &none  &none  &none  &none  &none
 &none         &none         &none           &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)                    &none  &none  &none  &none  &none  &none
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR     &none     &trans  &none  &none  &none  &none  &none  &none
