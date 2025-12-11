@@ -5,10 +5,199 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <0 1>;
+        };
+
+        redo {
+            bindings = <&mt LC(LS(Y)) LC(Y)>;
+            key-positions = <2 3>;
+        };
+
+        C_p {
+            bindings = <&mt LC(LS(P)) LC(P)>;
+            key-positions = <1 2>;
+        };
+
+        C_R {
+            bindings = <&kp LC(R)>;
+            key-positions = <12 13>;
+        };
+
+        C_k {
+            bindings = <&mt LC(LS(K)) LC(K)>;
+            key-positions = <14 15>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+        };
+
+        C_s {
+            bindings = <&mt LC(LS(S)) LC(S)>;
+            key-positions = <13 14>;
+        };
+
+        C_c {
+            bindings = <&mt LS(LC(C)) LC(C)>;
+            key-positions = <24 25>;
+        };
+
+        C_v {
+            bindings = <&mt LS(LC(V)) LC(V)>;
+            key-positions = <26 27>;
+        };
+
+        C_a {
+            bindings = <&mt LC(LS(A)) LC(A)>;
+            key-positions = <25 26>;
+        };
+
+        CA_v {
+            bindings = <&kp LC(LG(LA(V)))>;
+            key-positions = <14 27>;
+        };
+
+        C_w {
+            bindings = <&mt LC(LS(W)) LC(W)>;
+            key-positions = <36 37>;
+        };
+
+        C_d {
+            bindings = <&mt LC(LS(D)) LC(D)>;
+            key-positions = <38 39>;
+        };
+
+        C_g {
+            bindings = <&mt LC(LS(G)) LC(G)>;
+            key-positions = <37 38>;
+        };
+
+        C_A_D {
+            bindings = <&ctrl_alt_del>;
+            key-positions = <11 10>;
+        };
+
+        Pa {
+            bindings = <&pa>;
+            key-positions = <22 23>;
+        };
+
+        Greenshot {
+            bindings = <&kp LA(F12)>;
+            key-positions = <0 36>;
+        };
+
+        Draw {
+            bindings = <&kp LA(LS(F1))>;
+            key-positions = <1 37>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <50>;
+        };
+
+        Toggle_keyboard {
+            bindings = <&toggle>;
+            key-positions = <26 27 28>;
+        };
+
+        Invert {
+            bindings = <&kp LC(LG(C))>;
+            key-positions = <4 17>;
+        };
+
+        Text_Screenshot {
+            bindings = <&kp LS(LC(L))>;
+            key-positions = <0 37>;
+        };
+
+        Win_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <42 53>;
+        };
+
+        S_F3 {
+            bindings = <&mt LS(LC(F3)) LC(F3)>;
+            key-positions = <40 41>;
+        };
+    };
+
+    macros {
+        pa: pa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp E &kp N &kp N &kp I &kp S &kp SPACE &kp LS(S) &kp A &kp L &kp A &kp D &kp SPACE &kp LS(F) &kp L &kp U &kp T &kp E &kp SPACE &kp LS(B) &kp A &kp S &kp S &kp N8 &kp N7 &kp POUND &kp ENTER>;
+            label = "PA";
+            wait-ms = <20>;
+        };
+
+        ctrl_alt_del: ctrl_alt_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LC(LA(DELETE)) &kp ENTER>;
+            label = "CTRL_ALT_DEL";
+        };
+
+        hole: hole {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(H) &kp LS(O) &kp LS(L) &kp LS(E)>;
+            label = "HOLE";
+        };
+
+        vd: vd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(V) &kp LS(D)>;
+            label = "VD";
+        };
+
+        ad: ad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(A) &kp LS(D)>;
+            label = "AD";
+        };
+
+        rp: rp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(R) &kp LS(P)>;
+            label = "RP";
+        };
+
+        hd: hd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(H) &kp LS(D)>;
+            label = "HD";
+        };
+
+        c1: c1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp AT &kp LS(C) &kp N1>;
+            label = "C1";
+        };
+
+        toggle: toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 3 &kp LS(LA(F13))>;
+            label = "TOGGLE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,14 +211,15 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp D                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
+&kp ESC    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE         &kp DEL                                            &kp N6  &kp N7    &kp F14    &kp F15  &kp F16   &kp F17
+&kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS          &kp KP_PLUS                                        &kp A   &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&kp LCTRL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER          &mt COMMA APOS                                     &kp B   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp KP_SLASH     &kp Y            &kp N            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt LS(F2) F2    &kp N3     &kp Z   &kp M     &kp Y      &kp DOT  &kp FSLH  &kp RSHFT
+                                             &lt 5 SPACE      &kp KP_DOT            &lt 2 KP_NUMBER_0      &lt 1 SPACE      &mkp RCLK  &mo 2   &kp BSPC  &kp SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            label = "Base";
         };
 
         lower_layer {
@@ -42,11 +232,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&none  &none  &none  &none  &none  &none                &kp    &kp    &kp    &kp    &kp    &kp
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&kp    &kp    &kp    &kp    &kp    &kp    &none    &kp  &kp    &none  &none  &none  &none  &none
+                     &kp    &kp    &kp    &kp      &kp  &kp    &kp    &kp
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
