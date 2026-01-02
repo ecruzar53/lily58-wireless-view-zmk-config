@@ -232,7 +232,7 @@
         toggle: toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 0 &kp LS(LA(F13))>;
+            bindings = <&tog 3 &kp LS(LA(F13))>;
             label = "TOGGLE";
         };
     };
