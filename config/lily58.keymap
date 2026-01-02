@@ -15,21 +15,25 @@
         undo {
             bindings = <&kp LC(Z)>;
             key-positions = <0 1>;
+            layers = <0 3>;
         };
 
         redo {
             bindings = <&mt LC(LS(Y)) LC(Y)>;
             key-positions = <2 3>;
+            layers = <0 3>;
         };
 
         C_p {
             bindings = <&mt LC(LS(P)) LC(P)>;
             key-positions = <1 2>;
+            layers = <0 3>;
         };
 
         C_R {
             bindings = <&kp LC(R)>;
             key-positions = <12 13>;
+            layers = <0 3>;
         };
 
         C_k {
@@ -37,66 +41,95 @@
             key-positions = <14 15>;
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
+            layers = <0 3>;
         };
 
         C_s {
             bindings = <&mt LC(LS(S)) LC(S)>;
             key-positions = <13 14>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         C_c {
             bindings = <&mt LS(LC(C)) LC(C)>;
             key-positions = <24 25>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         C_v {
             bindings = <&mt LS(LC(V)) LC(V)>;
             key-positions = <26 27>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         C_a {
             bindings = <&mt LC(LS(A)) LC(A)>;
             key-positions = <25 26>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         CA_v {
             bindings = <&kp LC(LG(LA(V)))>;
             key-positions = <14 27>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         C_w {
             bindings = <&mt LC(LS(W)) LC(W)>;
             key-positions = <36 37>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         C_d {
             bindings = <&mt LC(LS(D)) LC(D)>;
             key-positions = <38 39>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         C_g {
             bindings = <&mt LC(LS(G)) LC(G)>;
             key-positions = <37 38>;
+            layers = <0 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         C_A_D {
             bindings = <&ctrl_alt_del>;
             key-positions = <11 10>;
+            layers = <0 3>;
         };
 
         Pa {
             bindings = <&pa>;
             key-positions = <22 23>;
+            layers = <0 3>;
         };
 
         Greenshot {
             bindings = <&kp LA(F12)>;
             key-positions = <0 36>;
+            layers = <0 3>;
         };
 
         Draw {
             bindings = <&kp LA(LS(F1))>;
             key-positions = <1 37>;
+            layers = <0 3>;
         };
 
         enter {
@@ -104,31 +137,37 @@
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
             timeout-ms = <50>;
+            layers = <0 3>;
         };
 
         Toggle_keyboard {
             bindings = <&toggle>;
             key-positions = <26 27 28>;
+            layers = <0 3>;
         };
 
         Invert {
             bindings = <&kp LC(LG(C))>;
             key-positions = <4 17>;
+            layers = <0 3>;
         };
 
         Text_Screenshot {
             bindings = <&kp LS(LC(L))>;
             key-positions = <0 37>;
+            layers = <0 3>;
         };
 
         Win_tab {
             bindings = <&kp LG(TAB)>;
             key-positions = <42 53>;
+            layers = <0 3>;
         };
 
         S_F3 {
             bindings = <&mt LS(LC(F3)) LC(F3)>;
             key-positions = <40 41>;
+            layers = <0 3>;
         };
     };
 
