@@ -121,13 +121,13 @@
         };
 
         Greenshot {
-            bindings = <&mt LA(LS(F12)) LA(F12)>;
+            bindings = <&mt LS(LC(F13)) LC(F13)>;
             key-positions = <0 36>;
             layers = <0 3>;
         };
 
         Draw {
-            bindings = <&kp LA(LS(F1))>;
+            bindings = <&mt LS(LC(F14)) LC(F14)>;
             key-positions = <1 37>;
             layers = <0 3>;
         };
