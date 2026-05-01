@@ -233,8 +233,7 @@
         toggle: toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 3 &kp LC(LA(F13))>, <&macro_press>;
-
+            bindings = <&tog 3 &kp LC(F24)>;
             label = "TOGGLE";
         };
 
@@ -264,6 +263,27 @@
             #binding-cells = <0>;
             bindings = <&kt LALT &kp N0 &kp NUMBER_1 &kp N7 &kp NUMBER_6 &kt LEFT_ALT>;
             label = "HOLD_DEGREE";
+        };
+
+        SD: SD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp AMPS &kp LS(D)>;
+            label = "SD";
+        };
+
+        TDC: TDC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp LS(D) &kp LS(C)>;
+            label = "TDC";
+        };
+
+        RAW: RAW {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R) &kp LS(A) &kp LS(W)>;
+            label = "RAW";
         };
     };
 
@@ -323,8 +343,8 @@
             bindings = <
 &trans  &trans          &kp UP_ARROW    &trans              &trans              &trans                                 &none   &none   &none   &none  &none  &none
 &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp LS(UP_ARROW)    &none                                  &none   &none   &none   &none  &none  &none
-&none   &none           &none           &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)                    &trans  &none   &none   &none  &none  &none
-&none   &none           &none           &none               &none               &none                &trans    &trans  &none   &none   &none   &none  &none  &none
+&RAW    &none           &none           &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)                    &trans  &none   &none   &none  &none  &none
+&TDC    &SD             &none           &none               &none               &none                &trans    &trans  &none   &none   &none   &none  &none  &none
                                         &trans              &trans              &trans               &trans    &trans  &trans  &trans  &trans
             >;
 
