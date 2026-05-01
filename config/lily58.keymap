@@ -240,21 +240,21 @@
         Degree: Degree {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(N0) &kp LA(NUMBER_1) &kp LA(N7) &kp LA(NUMBER_6)>;
+            bindings = <&kp LA(KP_NUMBER_0) &kp LA(KP_NUMBER_1) &kp LA(KP_NUMBER_7) &kp LA(KP_NUMBER_6)>;
             label = "DEGREE";
         };
 
         Diameter: Diameterr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(N8) &kp LA(N9) &kp LA(NUMBER_6) &kp LA(N0)>;
+            bindings = <&kp LA(KP_NUMBER_8) &kp LA(KP_NUMBER_9) &kp LA(KP_NUMBER_6) &kp LA(KP_NUMBER_0)>;
             label = "DIAMETERR";
         };
 
         HOLD_Diameter: HOLD_Diameter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LALT &kp N8 &kp N9 &kp NUMBER_6 &kp N0 &kt LEFT_ALT>;
+            bindings = <&kt LALT &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_0 &kt LEFT_ALT>;
             label = "HOLD_DIAMETER";
         };
 
