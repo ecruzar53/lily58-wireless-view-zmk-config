@@ -239,7 +239,7 @@
         HOLD_Diameter: HOLD_Diameter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LALT &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_0 &kt LEFT_ALT>;
+            bindings = <&kt LALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kt LEFT_ALT>;
             label = "HOLD_DIAMETER";
         };
 
