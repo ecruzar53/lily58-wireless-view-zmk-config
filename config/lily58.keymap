@@ -110,13 +110,13 @@
 
         C_A_D {
             bindings = <&ctrl_alt_del>;
-            key-positions = <11 10>;
+            key-positions = <11 10 9>;
             layers = <0 3>;
         };
 
         Pa {
             bindings = <&pa>;
-            key-positions = <22 23>;
+            key-positions = <22 23 21>;
             layers = <0 3>;
         };
 
